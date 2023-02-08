@@ -39,16 +39,19 @@
         <li>Color</li>
         <ul>
           <li>State electoral votes representative of corresponding party (red = republican, blue = democratic, red and blue stripes = mixed state)</li>
+          <li>This is a good choice, as these colors are already associated with the party, and the mixed value makes more sense than a blended color (i.e. purple).</li>
         </ul>
         <li>Shape</li>
         <ul>
           <li>Shape of each dataset is representative of state shape on US map</li>
           <li>Electoral Votes are represented as squares</li>
+          <li>These are both good choices, as states are representative of the data, so it is intuitive. Squares for the electoral votes differentiate it from total state votes and are a safe choice.</li>
         </ul>
       </ul>
       <h3>Colormap(s)</h3>
       <ul>
         <li>Categorical: Red for republican, Blue for democrat, Red & Blue for mixed state</li>
+        <li>This is a good choice, as divergent would show the ratio of democratic and republican votes, which is not a good representation of the electoral college system (all or nothing). Additionally, sequential would is used when there is only one phenomenon being studied, which is not the case for this dataset.</li>
       </ul>
     </div>
   </div>
@@ -71,15 +74,18 @@
         <li>Color</li>
         <ul>
           <li>Color is representative of scoring value</li>
+          <li>This is a good choice, as it makes it easy to see if the score is above/below average, without having to know a lot about baseball.</li>
         </ul>
         <li>Position</li>
         <ul>
           <li>Both horizontal and vertical: exit velocity and launch angle</li>
+          <li>This is a good choice, as both axes affect the scoring value; vertical more-so than launch angle.</li>
         </ul>
       </ul>
       <h3>Colormap(s)</h3>
       <ul>
-        <li>Sequential: Color goes from cool to warm with an increase in scoring value</li>
+        <li>Divergent: Color goes from cool to warm with an increase in scoring value</li>
+        <li>This is a good choice, as sequential shows the amount of a phenomenon, but this dataset is comparing the extremes (above and below average scoring values). Additionally, there are not different categories for scoring values, so it doesn't make sense to use a categorical color map.</li>
       </ul>
     </div>
   </div>
@@ -102,20 +108,24 @@
         <li>Color</li>
         <ul>
           <li>Hue: Red, Green, Blue, Black; each color represents a different dataset</li>
+          <li>This is a good choice, as it clarifies the different datasets even when the points overlap.</li>
         </ul>
         <li>Position</li>
         <ul>
             <li>Both horizontal and vertical based on amount of upwelling and date</li>
+            <li>This is a good choice, as it is an essential part of the data to see the velocity change overtime.</li>
         </ul>
         <li>Shape</li>
         <ul>
             <li>Circles, Dashes, Plusses, Asterisks; each shape represents a different dataset</li>
+            <li>This channel is fine on its own, but unnecessary when coupled with color, which does a better job. The point of the shapes is to represent a different dataset, but that is already covered by color, so it is redundant for the most part. It does make it slightly easier to see when the points are overlapped.</li>
         </ul>
       </ul>
 
       <h3>Colormap(s)</h3>
       <ul>
         <li>Categorical: each dataset has different color</li>
+        <li>This is a good choice, as divergent would show the extremes of a range, but the point of this visualization is to separate the four different categories. Additionally, sequential would is used when there is only one phenomenon being studied, which is not the case for this dataset.</li>
       </ul>
     </div>
   </div>
@@ -124,13 +134,10 @@
   <h2>Acknowledgements</h2>
   <div>
     <ul>
-      <li>https://www.w3schools.com/howto/howto_css_two_columns.asp</li>
-<<<<<<< HEAD
-      <li>https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JC017649</li>
-=======
-      <li>https://www.w3schools.com/js/js_if_else.asp</li>
-      <li>https://www.w3schools.com/jsref/prop_style_color.asp</li>
->>>>>>> c78478d5ce823fe9abeff3d4edf20046ce0fd5e3
+      <li><a href="https://www.w3schools.com/howto/howto_css_two_columns.asp">Columns</a></li>
+      <li><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JC017649">Dataset Citation</a></li>
+      <li><a href="https://www.w3schools.com/js/js_if_else.asp">If Else HTML</a></li>
+      <li><a href="https://www.w3schools.com/jsref/prop_style_color.asp">Style Color</a></li>
     </ul>
   </div>
 
